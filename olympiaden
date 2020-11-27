@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace uppgift_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Äpple = 7;
+            int Päron = 13;
+            int Axelresultat;
+            int Petraresultat;
+
+            Console.WriteLine("Hur många Äpplen såldes");
+            int Axel = int.Parse(Console.ReadLine());
+            Console.WriteLine("Hur många Päron såldes");
+            int Petra = int.Parse(Console.ReadLine());
+
+            Axelresultat = Axel * Äpple;
+            Petraresultat = Petra * Päron;
+
+            if (Axelresultat < Petraresultat)
+            {
+                Console.WriteLine("Petra sålde för mer");
+            }
+            else if(Axelresultat > Petraresultat)
+            {
+                Console.WriteLine("Axel sålde för mer");
+            }
+            else
+            {
+                Console.WriteLine("Petra och Axel sålde lika mycket");
+            }
+            Console.ReadLine();
+        }
+    }
+}
